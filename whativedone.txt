@@ -1,0 +1,21 @@
+Fonts: https://shanelonergan.github.io/streamline-your-workflow-with-custom-bash-commands/
+1. How did i create a new commmand ?
+    cd ~
+    touch ~/.custom_bash_commands.sh
+    vi .custom_bash_commands.sh
+              |
+              -----> #!/bin/bash
+
+                     #User want to listen to Rock
+                     function Gaxillic(){
+                           echo 'https://www.youtube.com/watch?v=UPND9CP_Omw&list=RDUPND9CP_Omw&index=1&ab_channel=11feinly2'
+                     }
+    source ~/.custom_bash_commands.sh      #this make .custom_bash_commands.sh executable and build the commands
+
+
+2. Type the new command "Gaxillic" in terminal and it will show up
+
+BIG THING. Making a repository that when installed will create a lot of commands to the user. Initialy i wana aim to Fedora 39 OS but l8 detect other operational systems as well.
+ 
+ps.  Alias - command shortcuts - can be used as well like:
+         alias gcl="git clone”
